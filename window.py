@@ -5,5 +5,7 @@ import time
 
 # root window の作成
 root = tk.Tk()
+root.title("select window"")
+
 
 root.mainloop()
