@@ -43,7 +43,6 @@ def onClick(event):
         if distance < 0.01:
             print('This node is ', labels[i])
             global blue, red
-            """
             try: 
                 if i in blue:
                     blue.remove(i)
@@ -55,14 +54,6 @@ def onClick(event):
                     raise ValueError("This node belongs neither blue nor red!")
             except ValueError as e:
                 print(e)
-            """
-            if i in blue:
-                blue.remove(i)
-                red.append(i)
-            elif i in red:
-                red.remove(i)
-                blue.append(i)
-            # print('blue', blue)
             refreshGraph()
 
 
