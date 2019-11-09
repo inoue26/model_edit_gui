@@ -1,0 +1,15 @@
+# Graphを表示するには
+edge の指定。nodeの指定(label))。位置の指定。
+
+# node情報はkeras nodeのobject idから得られる
+
+Dot のコンストラクタの情報をpng等のformatにしているのは
+'call_graphiz' -> dot.exeを読んでいる。
+おそらくdot.exeはDotから画像までやってしまうので
+グラフのposはここを解析しないと知ることはできない
+
+=> pygraph並びにnetworkxで代用する
+pygraph のpip installはgraphvizにかなり依存しているので仮想環境上で行う場合には以下を参照
+https://qiita.com/ryoppippi/items/f484eb995ff1e913dd44
+
+
